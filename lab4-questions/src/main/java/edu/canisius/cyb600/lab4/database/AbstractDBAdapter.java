@@ -1,6 +1,7 @@
 package edu.canisius.cyb600.lab4.database;
 
 import edu.canisius.cyb600.lab4.dataobjects.Actor;
+import edu.canisius.cyb600.lab4.dataobjects.Category;
 import edu.canisius.cyb600.lab4.dataobjects.Film;
 
 import java.sql.Connection;
@@ -23,4 +24,8 @@ public abstract class AbstractDBAdapter {
     public abstract List<Film> getAllFilmsWithALengthLongerThanX(int length);
 
     public abstract List<Actor> getActorsFirstNameStartingWithX(char firstLetter);
+
+    public abstract List<Film> getFilmsInCategory(Category category);
+
+    public abstract List<Actor> insertAllActorsWithAnOddNumberLastName(List<Actor> actors);
 }

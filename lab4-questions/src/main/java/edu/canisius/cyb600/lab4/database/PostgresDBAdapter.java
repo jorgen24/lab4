@@ -1,6 +1,7 @@
 package edu.canisius.cyb600.lab4.database;
 
 import edu.canisius.cyb600.lab4.dataobjects.Actor;
+import edu.canisius.cyb600.lab4.dataobjects.Category;
 import edu.canisius.cyb600.lab4.dataobjects.Film;
 
 import java.sql.*;
@@ -77,5 +78,15 @@ public class PostgresDBAdapter extends AbstractDBAdapter {
             e.printStackTrace();
         }
         return actors;
+    }
+
+    @Override
+    public List<Film> getFilmsInCategory(Category category) {
+        return null;
+    }
+
+    @Override
+    public List<Actor> insertAllActorsWithAnOddNumberLastName(List<Actor> actors) {
+        return null;
     }
 }
